@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/pseudoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <ImageButton
+            android:id="@+id/colorPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBaseline_toBaselineOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clearButton"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </android.support.constraint.ConstraintLayout>
+
+    <gesin.ceg4110_hw1.PaintingCanvasView
+        android:id="@+id/paintingCanvasView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pseudoToolbar" />
+
+</android.support.constraint.ConstraintLayout>

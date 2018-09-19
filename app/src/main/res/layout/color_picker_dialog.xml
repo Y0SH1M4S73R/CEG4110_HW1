@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/blueValue"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/blueBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blueBar" />
+
+    <TextView
+        android:id="@+id/greenValue"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/greenBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar" />
+
+    <TextView
+        android:id="@+id/redValue"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/redBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redBar" />
+
+    <TextView
+        android:id="@+id/blueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="B:"
+        app:layout_constraintBottom_toBottomOf="@+id/blueBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greenText"
+        app:layout_constraintTop_toTopOf="@+id/blueBar" />
+
+    <SeekBar
+        android:id="@+id/blueBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/blueValue"
+        app:layout_constraintStart_toEndOf="@+id/blueText"
+        app:layout_constraintTop_toBottomOf="@+id/greenBar" />
+
+    <SeekBar
+        android:id="@+id/greenBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/greenValue"
+        app:layout_constraintStart_toEndOf="@+id/greenText"
+        app:layout_constraintTop_toBottomOf="@+id/redBar" />
+
+    <SeekBar
+        android:id="@+id/redBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/redValue"
+        app:layout_constraintStart_toEndOf="@+id/redText" />
+
+    <TextView
+        android:id="@+id/redText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="R:"
+        app:layout_constraintBottom_toBottomOf="@+id/redBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/redBar" />
+
+    <TextView
+        android:id="@+id/greenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="G:"
+        app:layout_constraintBottom_toBottomOf="@+id/greenBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/greenBar" />
+</android.support.constraint.ConstraintLayout>
