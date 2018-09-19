@@ -10,7 +10,7 @@ General:
 - Switch between widgets by tapping the "Colors" and "Draw" tabs at the top of the screen.
 
 Colors:
-![Colors](Screenshots/Colors.png)
+![Colors](Screenshots/Color.png)
   - Tap the text box at the top to type any text.
   - Tap the large gray button to geenerate a random color.
   - The generated color is applied to the top text and its RGB values are displayed below the button.
